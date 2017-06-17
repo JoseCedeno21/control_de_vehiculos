@@ -1,53 +1,115 @@
 <ion-view title="Agregar Vehiculo" id="page3">
-  <ion-content padding="true" class="has-header" ng-controller="DBController">
-    <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
+
+  <ion-nav-buttons side="right" class="has-header" >
+    <button ui-sref="tabsController.listaDeVehiculos()" class="button home-button buttons button-clear header-item">
+      <i class="icon ion-android-home"></i> <span class="back-text"></span>
+    </button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header" >
+    <div style="margin: 0px; line-height: 120px; background-color: rgb(232, 235, 239); text-align: center;">
       <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
     </div>
     <form id="agregarVehiculo-form1" class="list">
-      <ion-radio id="agregarVehiculo-radio3"></ion-radio>
-      <label class="item item-input" id="agregarVehiculo-input2">
-        <span class="input-label">Placa</span>
-        <input type="text" placeholder="" id="agregarVehiculo-input2b" ng-model="placa">
+      <div id="informaciN-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>Placa::</strong>
+      </p>
+    </div>
+    <form id="informaciN-form3" class="list">
+      <label class="item item-input" id="informaciN-input3">
+        <input type="text" placeholder="">
       </label>
-      <label class="item item-input" id="agregarVehiculo-input3">
-        <span class="input-label">Marca</span>
-        <input type="text" placeholder="" id="agregarVehiculo-input3b" ng-model="marca">
+    </form>
+    <div id="informaciN-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>Marca:</strong>
+      </p>
+    </div>
+    <form id="informaciN-form3" class="list">
+      <label class="item item-input" id="informaciN-input3">
+        <input type="text" placeholder="">
       </label>
-      <label class="item item-input" id="agregarVehiculo-input5">
-        <span class="input-label">Alias</span>
-        <input type="text" placeholder="" id="agregarVehiculo-input5b" ng-model="alias">
+    </form>
+    <div id="informaciN-markdown3" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>Alias:</strong>
+      </p>
+    </div>
+    <form id="informaciN-form3" class="list">
+      <label class="item item-input" id="informaciN-input3">
+        <input type="text" placeholder="">
       </label>
-      <label class="item item-select" id="agregarVehiculo-select1">
-        <span class="input-label">Tipo</span>
-        <select ng-model="tipo">
+    </form>
+    <div id="agregarServicioPersonalizado-markdown18" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Tipo:</p>
+    </div>
+    <form id="agregarServicioPersonalizado-form14" class="list">
+      <label class="item item-select" id="agregarServicioPersonalizado-select3">
+        <span class="input-label"></span>
+        <select style="text-align: left;">
           <option>Automovil</option>
           <option>Motocicleta</option>
-          <option>Bicicleta</option>
-          <option>Camion</option>
+          <option>Camioneta</option>
+          <option>Camión</option>
           <option>Otro</option>
         </select>
       </label>
-      <label class="item item-input" id="agregarVehiculo-input6">
-        <span class="input-label">Ano</span>
-        <input type="text" placeholder="" id="agregarVehiculo-input6b" ng-model="year"> 
+    </form>
+    <div id="informaciN-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>Año:</strong>
+      </p>
+    </div>
+    <form id="informaciN-form3" class="list">
+      <label class="item item-input" id="informaciN-input3">
+        <input type="text" placeholder="">
       </label>
-      <label class="item item-input" id="agregarVehiculo-input7">
-        <span class="input-label">Color</span>
-        <input type="text" placeholder="" id="agregarVehiculo-input7b" ng-model="color">
+    </form>
+    <div id="informaciN-markdown1" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        <strong>Color:</strong>
+      </p>
+    </div>
+    <form id="informaciN-form3" class="list">
+      <label class="item item-input" id="informaciN-input3">
+        <input type="text" placeholder="">
       </label>
-      <h3 id="agregarVehiculo-heading1" style="color:#000000;">Servicios del Vehiculo</h3>
-      <ion-list id="agregarVehiculo-list7">
-        <ion-item class="item-icon-right" id="agregarVehiculo-list-item8">Cambio de Aceite
-          <i class="icon ion-android-delete"></i>
-        </ion-item>
-        <ion-item class="item-icon-right" id="agregarVehiculo-list-item9">Cambio de Bateria
-          <i class="icon ion-android-delete"></i>
-        </ion-item>
-        <ion-item class="item-icon-right" id="agregarVehiculo-list-item10">Liquido de Frenos
-          <i class="icon ion-android-delete"></i>
-        </ion-item>
-      </ion-list>
-      <button ui-sref="tabsController.agregarServicioPersonalizado()" id="agregarVehiculo-button4" ng-click="select()" class="button button-positive button-small button-block">Agregar Servicio Personalizado</a>
+    </form>
+      
+      <div id="informaciN-markdown3" class="show-list-numbers-and-dots" style="padding-top: 15px">
+        <p style="color:#000000;">
+          <strong>Servicios del vehículo:</strong>
+        </p>
+      </div>
+      
+            <div class="row">
+            
+              <div class = "col col-80">
+                <h5>Cambio de Aceite</h5>
+              </div>
+              <div class = "col col-10">
+                <i class="icon ion-android-settings" style="font-size: 25px; vertical-align: middle;"></i>
+              </div>
+              <div class = "col col-10">
+                <i class="icon ion-android-remove-circle" style="font-size: 25px; vertical-align: middle;"></i>
+              </div>
+
+            </div>
+
+            <div class="row">
+            
+              <div class = "col col-80">
+                <h5>Cambio de Bateria</h5>
+              </div>
+              <div class = "col col-10">
+                <i class="icon ion-android-settings" style="font-size: 25px; vertical-align: middle;"></i>
+              </div>
+              <div class = "col col-10">
+                <i class="icon ion-android-remove-circle" style="font-size: 25px; vertical-align: middle;"></i>
+              </div>
+              
+            </div>
+      <button ui-sref="agregarServicioPersonalizado()" id="agregarVehiculo-button4" ng-click="select()" class="button button-positive button-block">Agregar Servicio Personalizado</a>
     </form>
     <button ui-sref="tabsController.listaDeVehiculos()" id="botonAgregarVehiculo" ng-click="insert()" class="button button-balanced button-block">Agregar Vehiculo</button>
   </ion-content>
